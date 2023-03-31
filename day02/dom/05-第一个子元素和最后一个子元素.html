@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box">
+    <div>这是一个广告图片</div>
+    <ul>
+      <li>这是一个列表</li>
+    </ul>
+    <span>说明性文字</span>
+  </div>
+
+  <script>
+    
+    // box.firstElementChild    获取第一个子元素， 有兼容性问题，从IE9以后支持
+    
+    // box.lastElementChild     获取最后一个子元素， 有兼容性问题，从IE9以后支持
+    var box = document.getElementById('box');
+   
+    console.log(box.firstElementChild);
+    console.log(box.lastElementChild);
+
+  </script>
+</body>
+</html>

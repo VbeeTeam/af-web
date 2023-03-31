@@ -1,0 +1,63 @@
+section{
+    width: 950px;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    border: 1px solid #428bca;
+    padding: 1px 0;
+}
+section h3{
+    font-size: 14px;
+    color: #fff;
+    background-color: #428bca;
+    padding: 10px 15px;
+    font-weight: normal;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+section table{
+    width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+table thead tr{
+    font-size: 14px;
+    color: #333333;
+    border-bottom: 2px dashed #ccc;
+}
+table .num button{
+    width: 30px;
+    height: 26px;
+}
+table .num input{
+    width: 35px;
+    height: 26px;
+    text-align: center;
+    border: 1px solid #666;
+}
+table img{
+    width: 110px;
+    height: 86px;
+}
+table tbody tr{
+    border-top: 1px dashed #ccc;
+}
+.btn-sum{
+    font-size: 14px;
+    color: #333333;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #F0F7FE;
+    border-radius: 5px;
+}
+.btn-sum span{
+    float: right;
+}
+.sumBtn{
+     float: right;
+     padding: 10px 16px;
+     background-color: #428bca;
+     color: #fff;
+     font-size: 18px;
+     border-radius: 6px;
+     border: none;
+}

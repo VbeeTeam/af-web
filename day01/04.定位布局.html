@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 1000px;
+        }
+        .father{
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+            position: relative;
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            position: relative;
+        }
+        .wrap{
+            width: 30%;
+            height: 30%;
+            background-color: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .content{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 需求1：子盒子在父盒子中，水平垂直都居中 -->
+    <!-- 需求2：不定宽高的子盒子在父盒子中，水平垂直都居中 -->
+    <!-- 需求3：盒子在屏幕中水平垂直都居中 -->
+
+    <!-- 需求1 -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <!-- 需求二 -->
+    <div class="box">
+        <div class="wrap"></div>
+    </div>
+    <!-- 需求3 -->
+    <div class="content"></div>
+</body>
+</html>

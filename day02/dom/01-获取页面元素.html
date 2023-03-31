@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div id="main">world</div>
+
+  <p>heima</p>
+
+  <div class="box"></div>
+  <div class="box"></div>
+
+  <div name='main'></div>
+
+  <script>
+    // document  文档对象
+    // get 获取 Element  元素  By  根据  Id  标示
+    // 
+    // 如果页面上没有对应的id，此时返回null
+    var main = document.getElementById('main');
+    //根据标签名获取到的集合数组动态
+    var div = document.getElementsByTagName("div");
+    //根据类名获取到的集合数组  浏览器兼容性  IE9以后才支持的
+    var boxClass = document.getElementsByClassName("box")
+    // 根据标签的name属性获取元素
+    var names = document.getElementsByName('main');
+
+    // 打印
+    console.log("id:",main);
+    console.log("tag:",div);
+    console.log("class:",boxClass);
+    console.log("name:",names);
+
+  </script>
+</body>
+
+</html>

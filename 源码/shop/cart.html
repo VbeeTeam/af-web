@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <img src="./img/stumalllogo.png" alt="" />
+      <div class="right indexRight">
+        <div>
+          <a href="cart.html">
+            <span class="iconfont icon-add-cart-fill"></span>
+            <span>购物车</span>
+          </a>
+        </div>
+        <div>|</div>
+        <div>
+          <a href="login.html">
+            <span class="iconfont icon-user"></span>
+            <span>登录</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- 导航 -->
+    <nav>
+      <a href="index.html"><span class="iconfont icon-home-"></span></a>
+      <a href="#">秒杀</a>
+      <a href="#">优惠券</a>
+      <a href="#">电脑VIP</a>
+      <a href="#">外卖</a>
+      <a href="#">超市</a>
+    </nav>
+    <!-- 购物车 -->
+    <section>
+      <h3>购物车</h3>
+      <div style="padding: 15px;overflow: hidden;">
+        <table>
+          <thead>
+            <tr>
+              <th width="71"><input type="checkbox" onclick="selectAll()"/>全选</th>
+              <th width="110">图片</th>
+              <th width="255">商品</th>
+              <th width="98">单价</th>
+              <th width="135">数量</th>
+              <th width="98">金额</th>
+              <th width="120">操作</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyId">
+            <!-- <tr align="center">
+              <td><input type="checkbox" /></td>
+              <td><img src="./img/计算器.png" alt="" /></td>
+              <td>计算器</td>
+              <td>￥89</td>
+              <td class="num">
+                <button>-</button>
+                <input type="text" value="1" disabled />
+                <button>+</button>
+              </td>
+              <td>￥89</td>
+              <td><button>删除</button></td>
+            </tr>
+            <tr align="center">
+              <td><input type="checkbox" /></td>
+              <td><img src="./img/计算器.png" alt="" /></td>
+              <td>计算器</td>
+              <td>￥89</td>
+              <td class="num">
+                <button>-</button>
+                <input type="text" value="1" disabled />
+                <button>+</button>
+              </td>
+              <td>￥89</td>
+              <td><button>删除</button></td>
+            </tr>
+            <tr align="center">
+                <td><input type="checkbox" /></td>
+                <td><img src="./img/计算器.png" alt="" /></td>
+                <td>计算器</td>
+                <td>￥89</td>
+                <td class="num">
+                  <button>-</button>
+                  <input type="text" value="1" disabled />
+                  <button>+</button>
+                </td>
+                <td>￥89</td>
+                <td><button>删除</button></td>
+              </tr> -->
+          </tbody>
+        </table>
+        <div class="btn-sum">
+            <button onclick="delMore()">删除所选商品</button>
+            <span id="numSumId">已选商品 0 件 总价 ¥ 0元</span>
+        </div>
+        <button class="sumBtn">结算</button>
+      </div>
+    </section>
+    <!-- 主体-图标展示 -->
+    <div class="font">
+      <div class="wrap">
+        <div class="font-content">
+          <span class="iconfont icon-24gf-thumbsUp2"></span>
+          <small>品质保障</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-mingpian2"></span>
+          <small>私人订制</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-xuesheng"></span>
+          <small>学生特供</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-a-ziyuan710"></span>
+          <small>专属特权</small>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+      <div class="footer-wrap">
+        <div class="imgs">
+          <img src="./img/stumalllogo.png" alt="" />
+          <img src="./img/footerFont.png" alt="" />
+        </div>
+        <div class="center">
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li>
+              <span
+                style="margin-right: 3px"
+                class="iconfont icon-weixin"
+              ></span
+              ><span class="iconfont icon-xinlangweibo"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <p>电脑商城客户端</p>
+          <img src="./img/ios.png" alt="" />
+          <img src="./img/android.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- 导入购物车js文件 -->
+<script src="./js/cart.js"></script>

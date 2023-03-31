@@ -1,0 +1,166 @@
+.banner{
+    width: 1140px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+}
+.banner .menu{
+    float: left;
+    width: 165px;
+    height: 380px;
+    text-align: center;
+    background-color: #4288c3;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 3px 0;
+    box-sizing: border-box;
+}
+.banner .menu li{
+    height: 25px;
+    line-height: 25px;
+}
+.banner .menu li:hover{
+    background-color: rgb(245, 245, 245);
+    color: rgb(66, 136, 195);
+}
+.swiper{
+    float: right;
+    width: 945px;
+    height: 380px;
+    background-color: red;
+    position: relative;
+}
+.swiper #pic{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper #pic li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.swiper #pic img{
+    width: 100%;
+    height: 100%;
+}
+.leftBtn{
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.rightBtn{
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#numId{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    background-color: transparent;
+    transform: translateX(-50%);
+}
+#numId li{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+}
+.active{
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+}
+.product{
+    background-color: #f7f7f7;
+}
+.product .wrap{
+    width: 1140px;
+    margin: 0 auto;
+}
+.title{
+    padding-top: 30px;
+    overflow: hidden;
+}
+.line{
+    width: 300px;
+    height: 1px;
+    background-color: #ccc;
+    float: left;
+    margin-top: 15px;
+}
+.title h3{
+    float: left;
+    text-align: center;
+    width: 540px;
+    font-size: 24px;
+    color: #666666;
+}
+.title .line:last-of-type{
+    float: right;
+}
+.list{
+    padding: 30px 0;
+    overflow: hidden;
+}
+.list li{
+    width: 220px;
+    padding: 10px 10px 20px 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    float: left;
+    margin: 20px 10px 0 0;
+}
+.list li:nth-of-type(5n){
+    margin-right: 0;
+}
+.list img{
+    width: 200px;
+    height: 200px;
+}
+.list p{
+    font-size: 14px;
+    color: #333333;
+    margin: 10px 0;
+}
+.list b{
+    display: block;
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ff4500;
+}
+.list span{
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    height: 28px;
+    line-height: 28px;
+}
+.list button{
+    background-color: #ffffff;
+    border: 1px solid orange;
+    color: orange;
+    padding: 0 10px;
+    display: none;
+    height: 28px;
+    line-height: 28px;
+}
+.list li:hover button{
+    display: block;
+    margin: 0 auto;
+}
+.list li:hover span{
+    display: none;
+}

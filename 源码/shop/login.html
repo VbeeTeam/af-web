@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <img src="./img/stumalllogo.png" alt="" />
+      <div class="right">
+        <small>欢迎访问</small>
+        <b>电脑商城</b>
+      </div>
+    </header>
+    <!-- 主体-banner -->
+    <section>
+      <div class="form">
+        <p>用户登录</p>
+        <form>
+          <div class="item">
+            <label>名字：</label
+            ><input
+              id="nameId"
+              class="ipt"
+              type="text"
+              placeholder="请输入用户名"
+            />
+          </div>
+          <div class="item">
+            <label>密码：</label
+            ><input
+              id="pwdId"
+              class="ipt"
+              type="text"
+              placeholder="请输入密码"
+            />
+          </div>
+          <div class="item checkbox">
+            <input type="checkbox" /><span>自动登录</span>
+          </div>
+          <div class="item btn">
+            <input type="button" value="登录" onclick="login()" />
+            <p><small>还没有账号？</small><a href="register.html">注册</a></p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- 主体-图标展示 -->
+    <div class="font">
+      <div class="wrap">
+        <div class="font-content">
+          <span class="iconfont icon-24gf-thumbsUp2"></span>
+          <small>品质保障</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-mingpian2"></span>
+          <small>私人订制</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-xuesheng"></span>
+          <small>学生特供</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-a-ziyuan710"></span>
+          <small>专属特权</small>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+      <div class="footer-wrap">
+        <div class="imgs">
+          <img src="./img/stumalllogo.png" alt="" />
+          <img src="./img/footerFont.png" alt="" />
+        </div>
+        <div class="center">
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li>
+              <span
+                style="margin-right: 3px"
+                class="iconfont icon-weixin"
+              ></span
+              ><span class="iconfont icon-xinlangweibo"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <p>电脑商城客户端</p>
+          <img src="./img/ios.png" alt="" />
+          <img src="./img/android.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- 调用公共的密码验证规则函数工具 -->
+<script src="./js/tools.js"></script>
+<script>
+  function login() {
+    // 1.获取输入元素的dom节点
+    var nameDom = document.getElementById("nameId");
+    var pwdDom = document.getElementById("pwdId");
+    console.log(nameDom, pwdDom);
+    // 2.根据用户输入的内容做表单验证
+    if (nameDom.value != "" && pwdDom.value != "") {
+      // 调用密码验证正则
+      var boo = checkPassword(pwdDom.value);
+      console.log(boo);
+      if (boo) {
+        // 登录成功跳转首页
+        location.href = "index.html";
+      }
+    } else {
+      alert("请输入完整的登录信息");
+    }
+  }
+  
+</script>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <img src="./img/stumalllogo.png" alt="" />
+      <div class="right indexRight">
+        <div>
+          <a href="cart.html">
+            <span class="iconfont icon-add-cart-fill"></span>
+            <span>购物车</span>
+          </a>
+        </div>
+        <div>|</div>
+        <div>
+          <a href="login.html">
+            <span class="iconfont icon-user"></span>
+            <span>登录</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- 导航 -->
+    <nav>
+        <a href="index.html"><span class="iconfont icon-home-"></span></a>
+        <a href="#">秒杀</a>
+        <a href="#">优惠券</a>
+        <a href="#">电脑VIP</a>
+        <a href="#">外卖</a>
+        <a href="#">超市</a>
+    </nav>
+    <!-- 菜单、轮播图 -->
+    <div class="banner">
+        <ul class="menu">
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+            <li>图书音像</li>
+        </ul>
+        <div class="swiper" id="swiperId">
+            <ul id="picId">
+                <li><img src="./img/index_banner1.png" alt=""></li>
+                <li><img src="./img/index_banner2.png" alt=""></li>
+                <li><img src="./img/index_banner3.png" alt=""></li>
+                <li><img src="./img/index_banner4.png" alt=""></li>
+                <li><img src="./img/index_banner5.png" alt=""></li>
+            </ul>
+            <img id="leftId" class="leftBtn" src="./img/left.png" alt="">
+            <img id="rightId" class="rightBtn" src="./img/right.png" alt="">
+            <ul id="numId">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 商品列表 -->
+    <div class="product">
+        <div class="wrap">
+            <div class="title">
+                <div class="line"></div>
+                <h3>商品列表</h3>
+                <div class="line"></div>
+            </div>
+            <ul class="list" id="listId">
+                <!-- <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li>
+                <li>
+                    <img src="./img/戴尔电脑.png" alt="">
+                    <p>戴尔电脑</p>
+                    <b>4299元</b>
+                    <span>1万人好评</span>
+                    <button>加入购物车</button>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- 主体-图标展示 -->
+    <div class="font">
+      <div class="wrap">
+        <div class="font-content">
+          <span class="iconfont icon-24gf-thumbsUp2"></span>
+          <small>品质保障</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-mingpian2"></span>
+          <small>私人订制</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-xuesheng"></span>
+          <small>学生特供</small>
+        </div>
+        <div class="font-content">
+          <span class="iconfont icon-a-ziyuan710"></span>
+          <small>专属特权</small>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+      <div class="footer-wrap">
+        <div class="imgs">
+          <img src="./img/stumalllogo.png" alt="" />
+          <img src="./img/footerFont.png" alt="" />
+        </div>
+        <div class="center">
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">买家帮助</a></li>
+            <li><a href="#">买家帮助</a></li>
+            <li>
+              <span
+                style="margin-right: 3px"
+                class="iconfont icon-weixin"
+              ></span
+              ><span class="iconfont icon-xinlangweibo"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <p>电脑商城客户端</p>
+          <img src="./img/ios.png" alt="" />
+          <img src="./img/android.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- 导入轮播图js -->
+<script src="./js/swiper.js"></script>
+<!-- 导入商品列表js -->
+<script src="./js/productList.js"></script>
